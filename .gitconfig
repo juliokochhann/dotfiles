@@ -8,7 +8,9 @@
     editor   = nano
     autocrlf = input
 [credential]
-	helper = store
+    helper = store
+    helper = /usr/local/bin/git-credential-manager
+    credentialStore = secretservice
 [diff]
     tool = vscode
 [difftool "vscode"]
@@ -29,3 +31,5 @@
     all  = log --oneline
     last = log -1 HEAD
     cl   = !git clone https://github.com/juliokochhann/$1 && :
+[credential "https://dev.azure.com"]
+    useHttpPath = true
