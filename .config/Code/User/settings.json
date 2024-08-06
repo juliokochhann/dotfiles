@@ -1,0 +1,14 @@
+{
+    "editor.fontFamily": "'Roboto Mono', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "vscode-icons",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 15
+}

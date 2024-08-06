@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Arduino
+Exec=/home/julio/Aplicativos/arduino-ide.AppImage
+Terminal=false
+Icon=arduino
+Categories=Development
+Type=Application
+Comment=Arduino IDE
