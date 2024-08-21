@@ -2,6 +2,8 @@
     name     = Julio Cesar Kochhann
     email    = juliokochhann@hotmail.com
     username = juliokochhann
+[includeIf "gitdir/i:~/Maker Center/"]
+    path = "~/Maker Center/.gitconfig"
 [color]
 	ui = auto
 [core]
@@ -9,8 +11,15 @@
     autocrlf = input
 [credential]
     helper = store
-    helper = /usr/local/bin/git-credential-manager
     credentialStore = secretservice
+    helper = 
+    helper = /usr/local/bin/git-credential-manager
+[credential "https://dev.azure.com"]
+    useHttpPath = true
+[credential "https://github.com"]
+    username = juliokochhann
+[includeIf "gitdir/i:~/Maker Center/"]
+    path = "~/Maker Center/.gitconfig"
 [diff]
     tool = vscode
 [difftool "vscode"]
@@ -31,5 +40,5 @@
     all  = log --oneline
     last = log -1 HEAD
     cl   = !git clone https://github.com/juliokochhann/$1 && :
-[credential "https://dev.azure.com"]
-    useHttpPath = true
+[includeIf "gitdir/i:~/Maker Center/"]
+    path = "~/Maker Center/.gitconfig"
